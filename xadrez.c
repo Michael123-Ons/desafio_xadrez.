@@ -2,7 +2,7 @@
 
 int main () {
 
-    //Definição das variáveis e números de casas de cada peça 
+    //definição das variáveis e números de casas de cada peça 
     int mov_torre;
     int mov_bispoCima, mov_bispoDireita;
     int mov_rainha;
@@ -22,9 +22,11 @@ int main () {
     while (i <= 5) {
         mov_bispoCima++; //move para cima
         mov_bispoDireita++; //move para direita
-        printf("O Bispo se moveu para Cima e Direita.(%d)\n", i);
+        printf("O Bispo se moveu para Cima.(%d)\n", i,  mov_bispoCima);
+        printf("O Bispo se moveu para Direita.(%d)\n", i,  mov_bispoDireita);
         i++;
-    }
+    } 
+    
 
     //Movimentação da rainha usando "do-while"
     printf("\nMovimento da Rainha:\n");
